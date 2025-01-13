@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentals - EasyCar Hire</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #3a6186, #89253e);
+            color: #fff;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        .header h1 {
+            margin: 0;
+            color: #f9ca24;
+            font-size: 1.8rem;
+        }
+        .header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .header nav a:hover {
+            color: #f9ca24;
+        }
+        .cars-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .car-card {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .car-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .car-card h3 {
+            margin: 10px 0;
+            color: #f9ca24;
+        }
+        .car-card p {
+            margin: 5px 0;
+        }
+        .car-card button {
+            background-color: #f9ca24;
+            color: #89253e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+        .car-card button:hover {
+            background-color: #e8b009;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>EasyCar Hire</h1>
+        <nav>
+            <a href="/">Home</a> <!-- Update to root route -->
+            <a href="/suggestions">Suggestions</a> <!-- Corrected route to Suggestions page -->
+            <a href="/login">Login</a> <!-- Add Login link -->
+            <a href="/signup">Sign Up</a> <!-- Add Sign Up link -->
+        </nav>
+    </header>
+    <main>
+        <section class="cars-section">
+            <!-- Car Card 1 -->
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='car1.jpg') }}" alt="Car 1">
+                <h3>Sedan</h3>
+                <p>Comfortable and stylish</p>
+                <button onclick="window.location.href='/vehicledetails'">Rent Now</button> <!-- Redirect to vehicle details -->
+            </div>
+            <!-- Car Card 2 -->
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='car2.jpg') }}" alt="Car 2">
+                <h3>SUV</h3>
+                <p>Spacious and powerful</p>
+                <button onclick="window.location.href='/vehicledetails'">Rent Now</button> <!-- Redirect to vehicle details -->
+            </div>
+            <!-- Car Card 3 -->
+            <div class="car-card">
+                <img src="{{ url_for('static', filename='car3.jpg') }}" alt="Car 3">
+                <h3>Convertible</h3>
+                <p>Ride in style</p>
+                <button onclick="window.location.href='/vehicledetails'">Rent Now</button> <!-- Redirect to vehicle details -->
+            </div>
+        </section>
+    </main>
+</body>
+</html>

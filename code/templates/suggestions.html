@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions - EasyCar Hire</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        .header h1 {
+            margin: 0;
+            color: #f9ca24;
+            font-size: 1.8rem;
+        }
+        .header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .header nav a:hover {
+            color: #f9ca24;
+        }
+        .suggestion-section {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .suggestion-section h2 {
+            color: #f9ca24;
+            margin-bottom: 20px;
+        }
+        .suggestion-section form textarea {
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #f9ca24;
+            margin-bottom: 20px;
+            background: #1e3c72;
+            color: #fff;
+            font-size: 1rem;
+        }
+        .suggestion-section button {
+            background-color: #f9ca24;
+            color: #1e3c72;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+        .suggestion-section button:hover {
+            background-color: #e8b009;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>EasyCar Hire</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="car_rentals">Car Rentals</a>
+        </nav>
+    </header>
+    <main>
+        <section class="suggestion-section">
+            <h2>We Value Your Feedback</h2>
+            <form>
+                <textarea placeholder="Write your suggestions here..."></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

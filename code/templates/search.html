@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Vehicles</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+        }
+        .header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #f9ca24;
+        }
+        .header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .search-container {
+            margin: 80px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        .search-container input,
+        .search-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        .search-container button {
+            background-color: #f9ca24;
+            color: #1e3c72;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1rem;
+        }
+        .search-container button:hover {
+            background-color: #e8b009;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>EasyCar Hire</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/">    </a>
+            <a href="/">    </a>
+            <a href="/">    </a>
+        </nav>
+    </header>
+    <main>
+        <div class="search-container">
+            <h2>Search Vehicles</h2>
+            <input type="text" placeholder="Enter city or postcode" />
+            <select>
+                <option>Select Pickup Location</option>
+                <option>Airport</option>
+                <option>City Center</option>
+                <option>Train Station</option>
+            </select>
+            <input type="date" />
+            <input type="date" />
+            <button>Search</button>
+        </div>
+    </main>
+</body>
+</html>
